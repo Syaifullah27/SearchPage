@@ -34,7 +34,7 @@ const DetailPage = () => {
                 <img src={detailCars.image} />
                 <h1>{detailCars.name}</h1>
                 <p>Kapasitas : {detailCars.category}</p>
-                <p>Harga : {detailCars.price}</p>
+                <p>Harga : {formatRupiah(detailCars.price)} / hari</p>
             </div>
 
         </div>
@@ -42,3 +42,15 @@ const DetailPage = () => {
 }
 
 export default DetailPage
+
+
+
+
+export const formatRupiah = (number) => {
+    return new Intl.NumberFormat('id-ID', {
+        style: 'currency',
+        currency: 'IDR',
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0,
+    }).format(number)
+}
