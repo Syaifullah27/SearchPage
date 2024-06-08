@@ -8,7 +8,6 @@ const SearchPage = (props) => {
     return (
         <div>
             <Navbar />
-            <h1>Search Page</h1>
             <SearchBar 
             inputValue={inputValue} 
             selectValue={selectValue} 

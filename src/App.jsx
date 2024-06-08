@@ -5,6 +5,7 @@ import HomePage from './Pages/Home/Home'
 import SearchPage from './Pages/SearchPage/Search'
 import ResultPage from './Pages/ResultPage/Result'
 import DetailPage from './Pages/DetailPage/Detail'
+
 const App = () => {
 
   const [inputValue, setInputValue] = useState('')

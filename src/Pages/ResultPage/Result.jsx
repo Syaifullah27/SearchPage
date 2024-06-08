@@ -6,7 +6,6 @@ const ResultPage = () => {
     return (
         <div>
             <Navbar />
-            <h1>Result Page</h1>
             <ResultBar/>
         </div>
     )
