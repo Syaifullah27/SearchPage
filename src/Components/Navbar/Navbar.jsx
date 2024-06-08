@@ -4,10 +4,10 @@ import "./navbar.css"
 const Navbar = () => {
     return (
         <div className="navbar">
-            <h1>EsyehaX</h1>
+            <h1 className="text-3xl font-bold">EsyehaX</h1>
             <div>
-                <Link to={"/"}>Home</Link>
-                <Link to={"/Search-Page"}>Search</Link>
+                <Link to={"/"} className="mr-4 text-xl hover:underline">Home</Link>
+                <Link to={"/Search-Page"} className="mr-4 text-xl hover:underline">Search</Link>
             </div>
         </div>
     )
